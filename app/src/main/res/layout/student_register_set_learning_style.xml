@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_off_white">
+
+    <LinearLayout
+        android:id="@+id/main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Answer the below questions:"
+            android:textSize="25sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"></TextView>
+
+        <ScrollView
+            style="@android:style/Widget.Holo.ScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:layout_marginTop="30dp">
+
+            <LinearLayout
+                android:id="@+id/scroll_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioGroup
+                    android:id="@+id/q1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="I want to learn how to play a new board game or card game. I would:"/>
+                    <RadioButton
+                        android:id="@+id/q1_k"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="listen to somebody explaining it and ask questions." />
+                    <RadioButton
+                        android:id="@+id/q1_a"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="use the diagrams that explain the various stages, moves and strategies in the game." />
+                    <RadioButton
+                        android:id="@+id/q1_r"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="watch others play the game before joining in" />
+                    <RadioButton
+                        android:id="@+id/q1_v"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="read the instructions." />
+                </RadioGroup>
+
+                <RadioGroup
+                    android:id="@+id/q2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="I want to find out more about a tour that I am going on. I would:"/>
+                    <RadioButton
+                        android:id="@+id/q2_v"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="read about the tour on the itinerary." />
+                    <RadioButton
+                        android:id="@+id/q2_a"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="watch videos to see if there are things I like." />
+                    <RadioButton
+                        android:id="@+id/q2_r"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="use a map and see where the places are." />
+                    <RadioButton
+                        android:id="@+id/q2_k"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="talk with the person who planned the tour or others who are going on the tour." />
+                </RadioGroup>
+
+                <RadioGroup
+                    android:id="@+id/q3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="I have finished a competition or test and I would like some feedback. I would like to have feedback:"/>
+                    <RadioButton
+                        android:id="@+id/q3_k"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="using a written description of my results." />
+                    <RadioButton
+                        android:id="@+id/q3_v"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="using graphs of my results." />
+                    <RadioButton
+                        android:id="@+id/q3_r"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="using examples from what I have done." />
+                    <RadioButton
+                        android:id="@+id/q3_a"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="from somebody who talks it through with me." />
+                </RadioGroup>
+
+                <RadioGroup
+                    android:id="@+id/q4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="I need to find the way to a shop that a friend has recommended. I would:"/>
+                    <RadioButton
+                        android:id="@+id/q4_k"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="write down the street directions I need to remember." />
+                    <RadioButton
+                        android:id="@+id/q4_a"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="find out where the shop is in relation to somewhere I know." />
+                    <RadioButton
+                        android:id="@+id/q4_v"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="use a map." />
+                    <RadioButton
+                        android:id="@+id/q4_r"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="ask my friend to tell me the directions." />
+                </RadioGroup>
+
+                <RadioGroup
+                    android:id="@+id/q5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="When choosing my subjects to study, these are important for me:"/>
+                    <RadioButton
+                        android:id="@+id/q5_a"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Communicating with others through discussion." />
+                    <RadioButton
+                        android:id="@+id/q5_v"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Working with designs, maps or charts." />
+                    <RadioButton
+                        android:id="@+id/q5_k"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Applying my knowledge in real situations." />
+                    <RadioButton
+                        android:id="@+id/q5_r"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Using words well in written communications." />
+                </RadioGroup>
+
+                <RadioGroup
+                    android:id="@+id/q6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="I have a problem with my knee. I would prefer that the doctor:"/>
+                    <RadioButton
+                        android:id="@+id/q6_k"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="showed me a diagram of what was wrong." />
+                    <RadioButton
+                        android:id="@+id/q6_r"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="used a plastic model to show me what was wrong." />
+                    <RadioButton
+                        android:id="@+id/q6_v"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="gave me something to read to explain what was wrong." />
+                    <RadioButton
+                        android:id="@+id/q6_a"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="described what was wrong." />
+                </RadioGroup>
+
+                <RadioGroup
+                    android:id="@+id/q7"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="I want to assemble a wooden table that came in parts (kitset). I would learn best from:"/>
+                    <RadioButton
+                        android:id="@+id/q7_k"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="diagrams showing each stage of the assembly." />
+                    <RadioButton
+                        android:id="@+id/q7_a"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="advice from someone who has done it before." />
+                    <RadioButton
+                        android:id="@+id/q7_v"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="watching a video of a person assembling a similar table." />
+                    <RadioButton
+                        android:id="@+id/q7_r"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="written instructions that came with the parts for the table." />
+                </RadioGroup>
+
+                <RadioGroup
+                    android:id="@+id/q8"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="I want to suggest fund-raising options for a sports team. I would:"/>
+                    <RadioButton
+                        android:id="@+id/q8_r"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="focus on fund-raising options that I know will work." />
+                    <RadioButton
+                        android:id="@+id/q8_k"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="compare graphs of different fund-raising options." />
+                    <RadioButton
+                        android:id="@+id/q8_a"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="list details about different options." />
+                    <RadioButton
+                        android:id="@+id/q8_v"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="question others who have been involved with fundraising." />
+                </RadioGroup>
+
+                <RadioGroup
+                    android:id="@+id/q9"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="I want to learn to do something new on a computer. I would:"/>
+                    <RadioButton
+                        android:id="@+id/q9_r"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="talk with people who know about the program." />
+                    <RadioButton
+                        android:id="@+id/q9_a"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="start using it and learn by trial and error." />
+                    <RadioButton
+                        android:id="@+id/q9_k"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="read the written instructions that came with the program." />
+                    <RadioButton
+                        android:id="@+id/q9_v"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="follow the diagrams in a manual or online." />
+                </RadioGroup>
+
+                <RadioGroup
+                    android:id="@+id/q10"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="I prefer a presenter or a teacher who uses:"/>
+                    <RadioButton
+                        android:id="@+id/q10_k"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="question and answer, talk, group discussion, or guest speakers." />
+                    <RadioButton
+                        android:id="@+id/q10_v"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="diagrams, charts, maps or graphs." />
+                    <RadioButton
+                        android:id="@+id/q10_r"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="demonstrations, models or practical sessions." />
+                    <RadioButton
+                        android:id="@+id/q10_a"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="handouts, books, or readings." />
+                </RadioGroup>
+
+                <RadioGroup
+                    android:id="@+id/q11"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="When learning from the Internet I like:"/>
+                    <RadioButton
+                        android:id="@+id/q11_v"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="videos showing how to do or make things." />
+                    <RadioButton
+                        android:id="@+id/q11_r"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="interesting written descriptions, lists and explanations." />
+                    <RadioButton
+                        android:id="@+id/q11_a"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="audio channels where I can listen to podcasts or interviews." />
+                    <RadioButton
+                        android:id="@+id/q11_k"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="interesting design and visual features." />
+                </RadioGroup>
+
+                <RadioGroup
+                    android:id="@+id/q12"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="A website has a video showing how to make a special graph or chart. There is a person speaking, some lists and words describing what to do and some diagrams. I would learn most from:"/>
+                    <RadioButton
+                        android:id="@+id/q12_a"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="listening." />
+                    <RadioButton
+                        android:id="@+id/q12_r"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="seeing the diagrams." />
+                    <RadioButton
+                        android:id="@+id/q12_v"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="reading the words." />
+                    <RadioButton
+                        android:id="@+id/q12_k"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="watching the actions." />
+                </RadioGroup>
+
+                <RadioGroup
+                    android:id="@+id/q13"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="I want to learn how to take better photos. I would:"/>
+                    <RadioButton
+                        android:id="@+id/q13_k"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="ask questions and talk about how to achieve interesting effects." />
+                    <RadioButton
+                        android:id="@+id/q13_a"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="use examples of good and poor photos showing how to improve them." />
+                    <RadioButton
+                        android:id="@+id/q13_r"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="use diagrams showing how different camera settings work." />
+                    <RadioButton
+                        android:id="@+id/q13_v"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="use the written instructions about what to do." />
+                </RadioGroup>
+
+                <RadioGroup
+                    android:id="@+id/q14"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="I want to find out about a house or an apartment. Before visiting it, I would want:"/>
+                    <RadioButton
+                        android:id="@+id/q14_k"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="a plan showing the rooms and a map of the area." />
+                    <RadioButton
+                        android:id="@+id/q14_r"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="to view a video of the property." />
+                    <RadioButton
+                        android:id="@+id/q14_a"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="a discussion with the owner." />
+                    <RadioButton
+                        android:id="@+id/q14_v"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="a printed description of the rooms and features." />
+                </RadioGroup>
+
+                <RadioGroup
+                    android:id="@+id/q15"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="When I am learning I:"/>
+                    <RadioButton
+                        android:id="@+id/q15_k"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="read books, articles and handouts." />
+                    <RadioButton
+                        android:id="@+id/q15_a"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="see patterns in things." />
+                    <RadioButton
+                        android:id="@+id/q15_r"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="use examples and applications." />
+                    <RadioButton
+                        android:id="@+id/q15_v"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="like to talk things through." />
+                </RadioGroup>
+
+                <RadioGroup
+                    android:id="@+id/q16"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="After reading a play, I need to do a project. I would prefer to:"/>
+                    <RadioButton
+                        android:id="@+id/q16_v"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="act out a scene from the play." />
+                    <RadioButton
+                        android:id="@+id/q16_a"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="write about the play." />
+                    <RadioButton
+                        android:id="@+id/q16_r"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="draw or sketch a scene from the play." />
+                    <RadioButton
+                        android:id="@+id/q16_k"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="read a speech from the play." />
+                </RadioGroup>
+
+            </LinearLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:text="Find my Learning Style"></Button>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

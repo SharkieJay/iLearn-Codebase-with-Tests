@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mycorrectapplication">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="iLearn"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyCorrectApplication">
+        <activity android:name=".SplashScreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LoginActivity"></activity>
+        <activity android:name=".RegisterActivity">
+
+        </activity>
+        <activity android:name=".StudentClassroomsActivity"></activity>
+        <activity android:name=".StudentHomeActivity"></activity>
+        <activity android:name=".StudentLessonsActivity"></activity>
+        <activity android:name=".StudentRegisterActivity"></activity>
+        <activity android:name=".StudentRegisterSetLearningStyleActivity"></activity>
+        <activity android:name=".TeacherClassroomActivity"></activity>
+        <activity android:name=".TeacherClassroomCreateActivity"></activity>
+        <activity android:name=".TeacherClassroomStudentsActivity"></activity>
+        <activity android:name=".TeacherClassroomStudentViewActivity"></activity>
+        <activity android:name=".TeacherClassroomViewActivity"></activity>
+        <activity android:name=".TeacherHomeActivity">
+
+        </activity>
+        <activity android:name=".TeacherLessonActivity"></activity>
+        <activity android:name=".TeacherLessonCreateActivity"></activity>
+        <activity android:name=".TeacherLessonViewActivity"></activity>
+        <activity android:name=".NewPreviewActivity"></activity>
+        <activity android:name=".RegisterStudentTeacherActivity"></activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

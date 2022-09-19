@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/white"
+        android:paddingTop="25dp"
+        android:paddingBottom="25dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="500sp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Open:
+                            \nClick to open a lesson video. Then tap on the video player and click on the play button.
+                          \n\nAdd Activity:
+                            \nPause where you want the question to pop-up and click to add an activity. Then follow the steps given in the pop-up.
+                          \n\nSave.
+                            \nTo save a lesson.
+                          \n\nPreview:
+                            \nTo playback the video with the activities. Note that you cannot preview till you save a lesson.
+                          \n\nDelete:
+                            \nTo delete a lesson. Note that all the activities and student progress records related to the lesson will also be deleted."
+            android:textColor="@color/black"
+            android:textSize="20dp">
+        </TextView>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <Button
+                android:id="@+id/close_help"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Close"
+                android:textColor="@color/white"></Button>
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
